@@ -3,164 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <figure class="header__photo">
-            <img src="./assets/images/Tarik.webp" alt="photo de profil">
-        </figure>
+        <section class="header__photo">
+            <figure>
+                <img src="./assets/images/Tarik.webp" alt="photo de profil">
+            </figure>
+        </section>
 
         <section class="header__profile">
             <h1>Tarik Benabbou Mac Veigh</h1>
             <h2>Développeur Web et Web Mobile</h2>
-            <nav>
-                <ul>
-                    <li><img src="./assets/images/logos/email.png" alt="logo lettre"><a href="mailto:t2.macben@gmail.com">Mail</a></li>
-                    <li><img src="./assets/images/logos/home.png" alt="logo maison"><a href="https://www.google.com/maps/place/Paris/@48.8588255,2.2646349,21449m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.8575475!4d2.3513765!16zL20vMDVxdGo?entry=ttu&g_ep=EgoyMDI0MTAwNy4xIKXMDSoASAFQAw%3D%3D">Adresse</a></li>
-                    <li><img src="./assets/images/logos/phone.png" alt="logo téléphone"><a href="tel:0606060606">Téléphone</a></li>
-                    <li><img src="./assets/images/logos/driving-licence.png" alt="logo voiture">Permis B</li>
-                </ul>
-            </nav>
+            <section class="header__profile__item">
+
+                <!--utilisation <div> pour éviter une répétition de <section> bien que non sémantique-->
+                <div class="header__profile__item-2"> 
+                    <div class="header__profile__item-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#fafafa" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                        <a href="mailto:t2.macben@gmail.com">Mail</a>
+                    </div>
+
+                    <div class="header__profile__item-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#fafafa" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                        <a href="tel:0606060606">Téléphone</a>
+                    </div>
+                </div>
+
+                <!--utilisation <div> pour éviter une répétition de <section> bien que non sémantique-->
+                <div class="header__profile__item-2"> 
+                    <div class="header__profile__item-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#fafafa" d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+                        <a href="https://www.google.com/maps/place/Paris/@48.8588255,2.2646349,21449m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.8575475!4d2.3513765!16zL20vMDVxdGo?entry=ttu&g_ep=EgoyMDI0MTAwNy4xIKXMDSoASAFQAw%3D%3D">Adresse</a>
+                    </div>
+
+                    <div class="header__profile__item-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#fafafa" d="M135.2 117.4L109.1 192l293.8 0-26.1-74.6C372.3 104.6 360.2 96 346.6 96L165.4 96c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32l181.2 0c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2l0 144 0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L96 400l0 48c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-48L0 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg></i>
+                        Permis B
+                    </div>
+                </div>
+
+            </section>
         </section>
     </header>
 
     <main>
         <aside>
-            <section class="aside__item">
+            <section class="aside__block">
                 <h2>Compétences</h2>
-                <section>
-                    <ul class="aside__list-1">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
+                <section class="competences">
+                    <p>HTML</p>
+                    <div class="competences__svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#17abb3" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#17abb3" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#17abb3" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#17abb3" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#17abb3" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg>                        
+                    </div>    
+                </section>
 
-                    <ul class="aside__list-stars">
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#63E6BE" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#63E6BE" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#63E6BE" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#63E6BE" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#63E6BE" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg>
-                        </li>
-                    </ul>
-
-                    <ul class="aside__list-stars">
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#63E6BE" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#63E6BE" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#63E6BE" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#63E6BE" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#63E6BE" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg>
-                        </li>
-                    </ul>
+                <section class="competences">
+                    <p>CSS</p>
+                    <div class="competences__svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#17abb3" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#17abb3" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#17abb3" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#17abb3" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#17abb3" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"/></svg>
+                    </div>    
                 </section>
             </section>
 
-            <section class="aside__item">
+            <section class="aside__block">
                 <h2>Langues</h2>
-                <ul class="aside__list-1">
-                    <li>Français</li>
-                    <li>Anglais</li>
-                    <li>Espagnol</li>
-                </ul>
-               
-                <ul class="aside__list-2">
-                    <li>Langue maternelle</li>
-                    <li>Avancé</li>
-                    <li>Notions</li>
-                </ul>
+                <section class="languages">
+                    <div class="languages__item">
+                        <p>Français</p>
+                        <p class="languages__p2">Langue maternelle</p>
+                    </div>
+
+                    <div class="languages__item">
+                        <p>Anglais</p>
+                        <p class="languages__p2">Avancé</p>
+                    </div>
+                    
+                    <div class="languages__item">
+                        <p>Espagnol</p>
+                        <p class="languages__p2">Notions</p>
+                    </div>
+                </section>
             </section>
             
-            <section class="aside__item">
+            <section class="aside__block">
                 <h2>Qualité</h2>
-                <ul class="aside__list-3">
-                    <li type="square">Esprit d'équipe</li>
-                    <li type="square">Curiosité</li>
-                    <li type="square">Organisation</li>
+                <ul class="aside__list">
+                    <li>Esprit d'équipe</li>
+                    <li>Curiosité</li>
+                    <li>Organisation</li>
                 </ul>
             </section>
 
-            <section class="aside__item">
-                <h2>Centre d'intérêt</h2>
-                <ul class="aside__list-3">
-                    <li type="square">Histoire</li>
-                    <li type="square">Tennis</li>
-                    <li type="square">Voyage</li>
+            <section class="aside__block">
+                <h2>Centres d'intérêt</h2>
+                <ul class="aside__list">
+                    <li>Histoire</li>
+                    <li>Tennis</li>
+                    <li>Voyage</li>
                 </ul>
             </section>
         </aside>
 
         <section class="main__section">
-            <section class="main__section__item">
+            <section class="main__section__item-1">
                 <h2>Profil</h2>
-                <p>Je m'appelle Tarik Benabbou-Mac Veigh et je suis actuellement en apprentissage dans le développement web. 
+                <p>Je m'appelle Tarik Benabbou - Mac Veigh et je suis actuellement en apprentissage dans le développement web. 
                     Je commence à bien me familiariser avec les langages HTML et CSS, qui me permettent de mieux comprendre 
-                    comment les sites web sont construits. Avant de me lancer dans la programmation, je travaillais dans la 
+                    comment les sites web sont construits.</p> 
+                <p>Avant de me lancer dans la programmation, je travaillais dans la 
                     rédaction web, où j'écrivais du contenu optimisé pour des sites. C'est en travaillant avec des équipes 
-                    techniques que j'ai ressenti le besoin de mieux comprendre le fonctionnement interne des sites web. 
-                    Aujourd'hui, en apprenant le codage, je vise à combiner mes compétences en rédaction et en développement 
-                    pour devenir un professionnel polyvalent capable de contribuer à tous les aspects d'un projet web.</p>
+                    techniques que j'ai ressenti le besoin de mieux comprendre le fonctionnement interne des sites web.</p>
             </section>
 
-            <section class="main__section__item">
+            <section class="main__section__item-2">
                 <h2>Formations</h2>
-                <section class="main__section__education-place">
-                    <div>
-                        <h3>BTS Comptabilité</h3>
-                        <small>Lycée Corot - Douai</small>
+                <section class="main__section__education">
+                    <div class="main__section__education-diploma">
+                        <p>Titre professionnel DWWM</p>
+                        <small>Centre Européen de Formation</small>
                     </div>
-                    <div>
-                        <h3>Baccaleuréat</h3>
-                        <small>Lycée Corot - Douai</small>
-                    </div>
+                    <p class="main__section__education-year">2024/2025</p>
                 </section>
 
-                <ul class="main__section__education-year">
-                    <li>2011</li>
-                    <li>2009</li>
-                </ul>
+                <section class="main__section__education">
+                    <div class="main__section__education-diploma">
+                        <p>BTS Comptabilité</p>
+                        <small>Lycée Corot - Douai</small>
+                    </div>
+                    <p class="main__section__education-year">2010/2011</p>
+                </section>
+
+                <section class="main__section__education">
+                    <div class="main__section__education-diploma">
+                        <p>Baccalauréat</p>
+                        <small>Lycée Corot - Douai</small>
+                    </div>
+                    <p class="main__section__education-year">2008/2009</p>
+                </section>
             </section>
 
-            <section class="main__section__item">
+            <section class="main__section__item-2">
                 <h2>Stages</h2>
-                <section class="main__section__training-place">
-                    <div>
-                        <h3>Assistant paie</h3>
-                        <small>Cabinet comptable</small>
+                <section class="main__section__education">
+                    <div class="main__section__education-diploma">
+                        <p>Assistant de paie</p>
+                        <small>Cabinet comptable Palmier</small>
                     </div>
-                    <div>
-                        <h3>Asistant déclaration impôts</h3>
-                        <small>IRS</small>
-                    </div>
+                    <p class="main__section__education-year">2014</p>
                 </section>
 
-                <ul class="main__section__training-year">
-                    <li>2014</li>
-                    <li>2013</li>
-                </ul>
+                <section class="main__section__education">
+                    <div class="main__section__education-diploma">
+                        <p>Assistant déclaration impôts</p>
+                        <small>Internal Service Revenues</small>
+                    </div>
+                    <p class="main__section__education-year">2014</p>
+                </section>
             </section>
 
-            <section class="main__section__item">
+            <section class="main__section__item-2">
                 <h2>Expérience professionnelle</h2>
-                <section class="main__section__experience-place">
-                    <div>
-                        <h3>Rédacteur web freelance</h3>
+                <section class="main__section__education">
+                    <div class="main__section__education-diploma">
+                        <p>Rédacteur web freelance</p>
                         <small>TBMV Rédaction</small>
                     </div>
-                    <div>
-                        <h3>Gestionnaire de paie</h3>
+                    <p class="main__section__education-year">Depuis janvier 2023</p>
+                </section>
+
+                <section class="main__section__education">
+                    <div class="main__section__education-diploma">
+                        <p>Gestionnaire de paie</p>
                         <small>Keyloop Corporation</small>
                     </div>
-
-                    <ul class="main__section__experience-year">
-                        <li>Depuis Janvier 2023</li>
-                        <li>2015-2024</li>
-                    </ul>
+                    <p class="main__section__education-year">2015-2024</p>
                 </section>
             </section>
-
         </section>
     </main>
 
